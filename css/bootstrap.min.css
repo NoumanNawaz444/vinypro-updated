@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -18,7 +19,7 @@
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
-  --bs-primary: #1d1d1d;
+  --bs-primary: #197698;
   --bs-secondary: #1d1d1d;
   --bs-success: #1d1d1d;
   --bs-info: #1d1b1b;
@@ -30,12 +31,17 @@
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+    "Liberation  Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0)
   );
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 *,
 *::before,
@@ -45,6 +51,23 @@
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
+  }
+}
+.craftsmanship{
+  font-size: xx-small;
+}
+@media (min-width:560px){
+  .craftsmanship{
+    font-size: larger;
+  }
+}
+.learnMore{
+  min-width: 150px !important;
+  max-width: 150px !important;
+}
+@media (min-width:560px){
+  .learnMore{
+    width: auto !important;
   }
 }
 body {
